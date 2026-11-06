@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-
+new joker here!
 @dataclass
 class Product:
     code: str

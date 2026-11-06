@@ -1,5 +1,8 @@
 from dataclasses import dataclass
-new joker here!
+
+# joker is better
+
+
 @dataclass
 class Product:
     code: str
@@ -9,6 +12,7 @@ class Product:
     def __post_init__(self):
         if self.price < 0:
             raise ValueError("Price Over 0")
+
 
 @dataclass
 class CartItem:
@@ -21,4 +25,3 @@ class CartItem:
 
     def subtotal(self):
         return self.product.price * self.quantity
-
